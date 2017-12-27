@@ -19,8 +19,7 @@ pinEcho = 18
 print("Ultrasonic Measurement") 
  
 # Set pins as output and input 
-GPIO.setup(pinTrigger, GPIO.OUT)  # Trigger 
-GPIO.setup(pinEcho, GPIO.IN)      # Echo 
+GPIO.setup(pinTrigger, GPIO.OUT)  # Trigger GPIO.setup(pinEcho, GPIO.IN)      # Echo 
  
 try:     
 # Repeat the next indented block forever     
@@ -45,8 +44,8 @@ try:
     while GPIO.input(pinEcho)==0:             
       StartTime = time.time() 
  
-     # Stop when the Echo pin is no longer high - the end time         
-     while GPIO.input(pinEcho)==1:             
+    # Stop when the Echo pin is no longer high - the end time         
+    while GPIO.input(pinEcho)==1:             
       StopTime = time.time()             
       # If the sensor is too close to an object, the Pi cannot             
       # see the echo quickly enough, so it has to detect that             
