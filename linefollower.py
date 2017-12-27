@@ -19,7 +19,8 @@ pinEcho = 18
 print("Ultrasonic Measurement") 
  
 # Set pins as output and input 
-GPIO.setup(pinTrigger, GPIO.OUT)  # Trigger GPIO.setup(pinEcho, GPIO.IN)      # Echo 
+GPIO.setup(pinTrigger, GPIO.OUT)  # Trigger 
+GPIO.setup(pinEcho, GPIO.IN)      # Echo 
  
 try:     
 # Repeat the next indented block forever     
