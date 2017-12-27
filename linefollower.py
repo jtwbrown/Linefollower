@@ -5,8 +5,8 @@
 import RPi.GPIO as GPIO # Import the GPIO Library 
 import time # Import the Time library 
 
-# CamJam EduKit 3 - Robotics 
-# Worksheet 6 – Measuring Distance 
+
+
 
 # Set the GPIO modes 
 GPIO.setmode(GPIO.BCM) 
